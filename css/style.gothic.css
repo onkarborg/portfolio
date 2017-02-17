@@ -277,8 +277,8 @@ p {
 }
 
 h1 {
-    font-size: 63px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 h2 {
@@ -344,7 +344,7 @@ body {
 .intro-content {
     position: relative;
     z-index: 10;
-    top: 50%;
+    top: 70%;
     opacity: 0.9;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -368,7 +368,7 @@ body {
     text-decoration: underline;
     text-align: center;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .social-media {
@@ -847,6 +847,7 @@ body {
 }
 
 .skill {
+    display: none;
     text-align: center;
     padding: 20px 0;
     position: relative;

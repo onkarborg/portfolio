@@ -44,8 +44,13 @@ $(document).ready(function () {
 
         if (windowsWidth > windowsHeight) {
 
-            $('.introduction , .menu').css({
-                width: '50%',
+            $('.introduction ').css({
+                width: '40%',
+                height: '100%'
+            });
+
+            $(' .menu').css({
+                width: '60%',
                 height: '100%'
             });
 
