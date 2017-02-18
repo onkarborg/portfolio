@@ -3,7 +3,7 @@
 
 [INSTA, Main Stylesheet ]
 
-    Color        : GOTHIC ( #6A8D9D )
+    Color        : GOTHIC ( #333e43 )
 
     Name         : INSTA - Responsive Onepage Resume Template
 
@@ -108,7 +108,7 @@
     width: 20px;
     height: 20px;
     opacity: 0.8;
-    background-color: #6A8D9D;
+    /*background-color: #333e43;*/
     -webkit-animation: loaderBlock 1.2s infinite ease-in-out both;
     animation: loaderBlock 1.2s infinite ease-in-out both;
 }
@@ -116,6 +116,7 @@
 .loader span:nth-child(1) {
     top: 0;
     left: 0;
+    background-color: #2ec0ff;
 }
 
 .loader span:nth-child(2) {
@@ -123,6 +124,7 @@
     right: 0;
     -webkit-animation: loaderBlockInverse 1.2s infinite ease-in-out both;
     animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+    background-color: #ff6d2e;
 }
 
 .loader span:nth-child(3) {
@@ -130,11 +132,13 @@
     left: 0;
     -webkit-animation: loaderBlockInverse 1.2s infinite ease-in-out both;
     animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+    background-color: #c0ff2e;
 }
 
 .loader span:nth-child(4) {
     bottom: 0;
     right: 0;
+    background-color: #6d2eff;
 }
 
 @-webkit-keyframes loader {
@@ -334,11 +338,39 @@ body {
 .mask {
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     position: absolute;
     top: 0;
     left: 0;
     background: #1a1b23;
+}
+
+.profile-btn .mask:hover {
+    opacity:0.7;
+    background-color: #2ec0ff;
+    border: 1px #2ec0ff solid;
+    border-radius: 5px;
+}
+
+.resume-btn .mask:hover {
+    opacity:0.7;
+    background-color: #ff6d2e;
+    border: 1px #ff6d2e solid;
+    border-radius: 5px;
+}
+
+.portfolio-btn .mask:hover{
+    opacity: 0.7;
+    background-color: #c0ff2e;
+    border: 1px #c0ff2e solid;
+    border-radius: 5px;
+}
+
+.contact-btn .mask:hover{
+    opacity: 0.7;
+    background-color: #6d2eff;
+    border: 1px #6d2eff solid;
+    border-radius: 5px;
 }
 
 .intro-content {
@@ -386,7 +418,7 @@ body {
 
 .social-media a + .tooltip > .tooltip-inner {
     background-color: transparent;
-    color: #6A8D9D;
+    color: #333e43;
     font-size: 16px;
 }
 .social-media a + .tooltip > .tooltip-arrow {
@@ -396,7 +428,7 @@ body {
 /*Bootstrap tooltips Customized*/
 
 .social-media a:hover {
-    color: #6A8D9D;
+    color: #333e43;
 }
 
 /* ( c ) Navigation Menu */
@@ -546,7 +578,7 @@ body {
 }
 
 .main-heading h1:after {
-    background-color: #6A8D9D;
+    background-color: #333e43;
     position: absolute;
     content: "";
     top: 100%;
@@ -586,11 +618,11 @@ body {
 
 .story-content img {
     padding: 0;
-    border: 1px solid #6A8D9D;
+    border: 1px solid #333e43;
 }
 
 .story-content div h3 {
-    color: #6A8D9D;
+    color: #333e43;
     line-height: 1;
     margin-top: 0;
 }
@@ -600,8 +632,8 @@ body {
 }
 
 .story-content div a {
-    border: 1px solid #6A8D9D;
-    color: #6A8D9D;
+    border: 1px solid #333e43;
+    color: #333e43;
     display: block;
     float: left;
     margin: 29px 5px;
@@ -616,14 +648,14 @@ body {
 }
 
 .story-content div a:hover {
-    background: #6A8D9D;
+    background: #333e43;
     color: #fff;
 }
 
 /* ( b ) What Can I Do */
 
 .services-container {
-    background: #6A8D9D;
+    background: #333e43;
 }
 
 .services-container h2 {
@@ -648,7 +680,7 @@ body {
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.15), 0 0 0 0 rgba(255, 255, 255, 0.3);
-    color: #6A8D9D;
+    color: #333e43;
     font-size: 36px;
     height: 60px;
     line-height: 60px;
@@ -698,7 +730,7 @@ body {
 }
 
 .education-container:before {
-    background: #6A8D9D;
+    background: #333e43;
     content: "";
     height: 96%;
     left: 50px;
@@ -713,7 +745,7 @@ body {
 }
 
 .education-container .bullet {
-    background: #6A8D9D;
+    background: #333e43;
     border: 5px solid #f5f5f5;
     border-radius: 50%;
     height: 30px;
@@ -737,7 +769,7 @@ body {
 }
 
 .education-content h3 {
-    background: #6A8D9D;
+    background: #333e43;
     color: #fff;
     display: block;
     margin: 0;
@@ -746,7 +778,7 @@ body {
 }
 
 .education-content h3:before {
-    border-color: transparent #6A8D9D transparent transparent;
+    border-color: transparent #333e43 transparent transparent;
     border-image: none;
     border-style: solid;
     border-width: 10px;
@@ -767,7 +799,7 @@ body {
 /* ( b ) Experience Section */
 
 .experience {
-    background: #6A8D9D;
+    background: #333e43;
 }
 
 .experience h2 {
@@ -792,7 +824,7 @@ body {
 
 .experience-container .bullet {
     background: #fff;
-    border: 5px solid #6A8D9D;
+    border: 5px solid #333e43;
     border-radius: 50%;
     height: 30px;
     right: 21px;
@@ -811,7 +843,7 @@ body {
 
 .experience-content h3 {
     background: #fff;
-    color: #6A8D9D;
+    color: #333e43;
     display: block;
     margin: 0;
     line-height: 1.42;
@@ -885,8 +917,8 @@ body {
 
 .filter {
     background: none;
-    border: 1px solid #6A8D9D;
-    color: #6A8D9D;
+    border: 1px solid #333e43;
+    color: #333e43;
     margin: 10px 0;
     padding: 10px 25px;
     -webkir-transition: all 0.3s;
@@ -897,12 +929,12 @@ body {
 }
 
 .filter:hover {
-    background: #6A8D9D;
+    background: #333e43;
     color: #fff;
 }
 
 .filter.active {
-    background: #6A8D9D;
+    background: #333e43;
     color: #fff;
 }
 
@@ -917,25 +949,41 @@ body {
 /*----- Hover Effect Portfolio Image --------*/
 
 .project {
+    padding: 20px;
+    border: 1px white;
+    border-radius: 5px;
+    height: 230px;
+    background: #CCC;
     width: 100%;
+    text-align: center;
+    white-space: nowrap;
     overflow: hidden;
     margin: 15px 0;
     position: relative;
-    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 11px 7px 17px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 11px 7px 17px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 11px 7px 17px 5px rgba(0, 0, 0, 0.4);
+}
+
+.project:before,
+.project_before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .project img {
     position: relative;
+    display: inline-block;
+    vertical-align: middle;
     width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
 }
 
 .project .ovrly {
-    background: rgba(106, 141, 157, 0.5);
+    background: rgba(10,10, 10, 0.5);
     position: absolute;
     height: 100%;
     left: 0;
@@ -972,9 +1020,7 @@ body {
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+
     float: left;
     display: block;
     line-height: 40px;
@@ -982,8 +1028,7 @@ body {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
+
     color: #343333;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
     -moz-transition: -moz-transform 0.3s, opacity 0.3s;
@@ -1021,7 +1066,7 @@ body {
 
 .popup_content {
     max-width: 500px;
-    border: 5px solid #6A8D9D;
+    border: 5px solid #333e43;
     background: #fff;
 }
 
@@ -1041,8 +1086,8 @@ body {
 }
 
 .popup_content a {
-    border: 1px solid #6A8D9D;
-    color: #6A8D9D;
+    border: 1px solid #333e43;
+    color: #333e43;
     display: block;
     width: 150px;
     margin: 30px auto;
@@ -1057,7 +1102,7 @@ body {
 }
 
 .popup_content a:hover {
-    background: #6A8D9D;
+    background: #333e43;
     color: #fff;
 }
 
@@ -1066,7 +1111,7 @@ body {
 /* ( b )  Testimonial Section */
 
 .testimonials {
-    background: #6A8D9D;
+    background: #333e43;
 }
 
 .testimonials h2 {
@@ -1113,7 +1158,7 @@ body {
 
 .contact-form input,
 .contact-form textarea {
-    border: 1px solid #6A8D9D;
+    border: 1px solid #333e43;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -1155,14 +1200,14 @@ body {
 .contact-form textarea:focus,
 .contact-form input:hover,
 .contact-form textarea:hover {
-    box-shadow: 0px 0px 3px 0px #6A8D9D;
+    box-shadow: 0px 0px 3px 0px #333e43;
 }
 
 .contact-form button {
     background: none;
     border-radius: 2px;
-    border: 1px solid #6A8D9D;
-    color: #6A8D9D;
+    border: 1px solid #333e43;
+    color: #333e43;
     margin: 10px 0;
     padding: 10px 25px;
     text-align: center;
@@ -1174,7 +1219,7 @@ body {
 }
 
 .contact-form button:hover {
-    background: #6A8D9D;
+    background: #333e43;
     color: #fff;
 }
 
@@ -1241,7 +1286,7 @@ body {
 
 .contact-details .social-media a + .tooltip > .tooltip-inner {
     background-color: #343333;
-    color: #6A8D9D;
+    color: #333e43;
     font-size: 16px;
     padding: 3px 10px 5px 10px;
     border-radius: 2px;
@@ -1257,7 +1302,7 @@ body {
                       -------------*/
 
 .footer {
-    background: #6A8D9D;
+    background: #333e43;
     padding: 10px 20px 6px 20px;
 }
 

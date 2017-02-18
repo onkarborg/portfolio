@@ -1,0 +1,126 @@
+.header-white {
+  /*background:linear-gradient(135deg, #172a74, #21a9af);*/
+  /*background-color:#184e8e;*/
+  padding-bottom:120px;
+  font-family:'Source Sans Pro', sans-serif;
+}
+
+@media (max-width:767px) {
+  .header-white {
+    padding-bottom:80px;
+  }
+}
+
+.header-white .action-button, .header-white .action-button:active {
+  border:1px solid rgba(255,255,255,0.7);
+  border-radius:20px;
+  color:#ebeff1;
+  box-shadow:none;
+  text-shadow:none;
+  padding:6px 15px;
+  background:transparent;
+  transition:background-color 0.25s;
+  outline:none;
+}
+
+.header-white .action-button:hover {
+  color:#fff;
+}
+
+.header-white .action-button.btn-lg {
+  padding:7px 18px;
+}
+
+.header-white .hero {
+  /*margin-top:60px;*/
+}
+
+@media (max-width:767px) {
+  .header-white .hero {
+    margin-top:20px;
+    text-align:center;
+  }
+}
+
+.header-white .hero h1 {
+  color:#5e5e5e;
+  font-size:40px;
+  margin-top:0px;
+  /*margin-bottom:24px;*/
+  font-weight:300;
+}
+
+@media (max-width:991px) {
+  .header-white .hero h1 {
+    margin-top:0;
+    margin-bottom:15px;
+    line-height:1.4;
+  }
+}
+
+.header-white .hero p {
+  /*color:rgba(255,255,255,0.8);*/
+  font-size:20px;
+  margin-bottom:30px;
+  font-weight:300;
+}
+
+.header-white .phone-holder {
+  text-align:right;
+}
+
+.header-white div.iphone-mockup {
+  position:relative;
+  max-width:300px;
+  margin:20px;
+  display:inline-block;
+}
+
+.header-white .iphone-mockup img.device {
+  width:100%;
+  height:auto;
+}
+
+.header-white .iphone-mockup .screen {
+  position:absolute;
+  width:88%;
+  height:77%;
+  top:12%;
+  border-radius:2px;
+  left:6%;
+  border:1px solid #444;
+  background-color:#aaa;
+  overflow:hidden;
+  background:url(../../assets/img/screen-content-iphone-6.jpg);
+  background-size:cover;
+  background-position:center;
+}
+
+.header-white .iphone-mockup .screen:before {
+  content:'';
+  background-color:#fff;
+  position:absolute;
+  width:70%;
+  height:140%;
+  top:-12%;
+  right:-60%;
+  transform:rotate(-19deg);
+  opacity:0.2;
+}
+
+.portfolio-item > div {
+  background:#f5f5f5;
+  /*border-radius:10px;*/
+  padding:20px;
+}
+
+.portfolio-item > div:hover {
+  background:linear-gradient(135deg, #172a74, #21a9af);
+  border-radius:10px;
+  padding:20px;
+  color:white;
+  /*animation-name:example;*/
+  /*animation-duration:4s;*/
+  /*animation-iteration-count:3;*/
+}
+
