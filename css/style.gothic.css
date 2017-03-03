@@ -373,18 +373,87 @@ body {
     border-radius: 5px;
 }
 
-.intro-content {
-    position: relative;
-    z-index: 10;
-    top: 70%;
-    opacity: 0.9;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
+@media only screen and (max-device-width: 480px) {
+    .intro-content {
+        position: relative;
+        z-index: 10;
+        top: 50px;
+        opacity: 0.9;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .social-media {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
 
+    .social-media a {
+        color: #fff;
+        text-decoration: none;
+        outline: 0 none;
+        padding: 0 10px;
+    }
+
+    .social-media a + .tooltip > .tooltip-inner {
+        background-color: transparent;
+        color: #333e43;
+        font-size: 16px;
+    }
+    .social-media a + .tooltip > .tooltip-arrow {
+        border-bottom-color: transparent;
+    }
+
+    /*Bootstrap tooltips Customized*/
+
+    .social-media a:hover {
+        color: #333e43;
+    }
+}
+@media only screen and (min-device-width: 480px) {
+    .intro-content {
+        position: relative;
+        z-index: 10;
+        top: 150px;
+        opacity: 0.9;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .social-media {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .social-media a {
+        color: #fff;
+        text-decoration: none;
+        outline: 0 none;
+        padding: 0 10px;
+    }
+
+    .social-media a + .tooltip > .tooltip-inner {
+        background-color: transparent;
+        color: #333e43;
+        font-size: 16px;
+    }
+    .social-media a + .tooltip > .tooltip-arrow {
+        border-bottom-color: transparent;
+    }
+
+    /*Bootstrap tooltips Customized*/
+
+    .social-media a:hover {
+        color: #333e43;
+    }
+}
 .intro-content h1 {
     color: #fff;
     text-align: center;
