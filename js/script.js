@@ -21,7 +21,7 @@
     ------------------  */
 
 $(window).load(function () {
-    $('#preloader').delay(350).fadeOut('slow', function () {
+    $('#preloader').delay(250).fadeOut('slow', function () {
         $('.profile-page, .resume-page, .contact-page').hide();
     });
 });
@@ -101,16 +101,26 @@ $(document).ready(function () {
             menuWidth = $('.menu').width();
 
         $('.introduction').animate({
-            left: '-' + introWidth
+            left: introWidth
         }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
+        $('.menu > div').not(this).animate({
+            left: '-' + menuWidth,
+            height: '0%'
         }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
         });
-
+        $(this).animate({width: "200%", height: "100%", top: "0"}, 1000, 'easeOutQuart',
+            function () {
+                $(this).animate({left: "200%"}, 1000, 'easeOutQuart', function () {
+                    $('.menu>div').css({
+                        width: '100%',
+                        height: '25%'
+                    });
+                    $('.home-page').css({
+                        visibility: 'hidden'
+                    });
+                });
+            }
+        );
     });
 
     // Show Reletive Page Onclick
@@ -137,7 +147,7 @@ $(document).ready(function () {
         $('.home-page').css({
             visibility: 'visible'
         });
-        $('.introduction, .menu').animate({
+        $('.introduction, .menu, .menu>div').animate({
             left: 0
         }, 1000, 'easeOutQuart');
         $('.profile-page, .resume-page, .portfolio-page, .contact-page').fadeOut(800);
