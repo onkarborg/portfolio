@@ -104,7 +104,7 @@ $(document).ready(function () {
             left: introWidth
         }, 1000, 'easeOutQuart');
         $('.menu > div').not(this).animate({
-            left: '-' + menuWidth,
+            left: '-' + menuWidth ,
             height: '0%'
         }, 1000, 'easeOutQuart', function () {
         });
