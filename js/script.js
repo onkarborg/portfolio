@@ -103,8 +103,8 @@ $(document).ready(function () {
 
         $('.introduction').animate({
             left: introWidth
-        }, 200, 'easeOutQuart');
-        $('.menu > div').not(this).animate({left: '-' + menuWidth, height: '0%'}, 200, 'easeOutQuart', function () {
+        }, 1000, 'easeOutQuart');
+        $('.menu > div').not(this).animate({left: '-' + menuWidth, height: '0%'}, 1000, 'easeOutQuart', function () {
         });
         $(this).css("background-size","cover");
         $(this).css("background-position","0px 0px");
