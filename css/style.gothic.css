@@ -726,6 +726,7 @@ body {
 
 .services-container {
     background: #333e43;
+    height: 100vh;
 }
 
 .services-container h2 {
@@ -1183,10 +1184,13 @@ body {
 
 .testimonials {
     background: #333e43;
+    background: white;
+    min-height:70vh;
 }
 
 .testimonials h2 {
     color: #fff;
+    color:#333e43;
 }
 
 .testimonials-container {
@@ -1196,8 +1200,10 @@ body {
 .testimonials-container div div p {
     font-style: italic;
     color: #fff;
+    color:#333e43;
     font-size: 16px;
     text-align: center;
+    margin-top:10vh;
 }
 
 .testimonials-container div div p i {
@@ -1207,6 +1213,7 @@ body {
 .testimonials-container div div h3 {
     font-style: italic;
     color: #fff;
+    color:#333e43;
     text-align: center;
 }
 

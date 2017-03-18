@@ -83,8 +83,8 @@
     <!-- ( b ) Navigation Menu -->
 
     <div class="menu">
-        <div class="profile-btn">
-            <img alt="" src="images/menu/profile_btn.jpg">
+        <div class="profile-btn" style="background: url(images/menu/profile_btn.jpg); background-size: 100%; background-repeat: no-repeat; background-position: 0px -220px">
+            <!--<img alt="" src="images/menu/profile_btn.jpg" style="top: -220px;">-->
             <div class="mask">
             </div>
             <div class="heading col-xs-11 col-xs-offset-3">
@@ -100,8 +100,8 @@
 
         <!-- Single Navigation Menu Button [ END ]  -->
 
-        <div class="resume-btn">
-            <img alt="" src="images/menu/resume_btn.jpg">
+        <div class="resume-btn" style="background: url(images/menu/resume_btn.jpg); background-size: 100%; background-repeat: no-repeat;background-position: 0px -150px">
+            <!--<img alt="" src="images/menu/resume_btn.jpg" style="top: -220px; ">-->
             <div class="mask">
             </div>
             <div class="heading col-xs-10 col-xs-offset-3">
@@ -117,8 +117,8 @@
 
         <!-- Single Navigation Menu Button [ END ]  -->
 
-        <div class="portfolio-btn">
-            <img alt="" src="images/menu/portfolio_btn.jpg">
+        <div class="portfolio-btn" style="background: url(images/menu/portfolio_btn.jpg); background-size: 100%; background-repeat: no-repeat;background-position: 0px -220px">
+            <!--<img alt="" src="images/menu/portfolio_btn.jpg" style="top: -220px;">-->
             <div class="mask">
             </div>
             <div class="heading col-xs-11 col-xs-offset-3">
@@ -133,8 +133,8 @@
         </div>
 
         <!-- Single Navigation Menu Button [ END ]  -->
-        <div class="contact-btn">
-            <img alt="" src="images/menu/contact_btn.jpg" style="height: 100%">
+        <div class="contact-btn"style="background: url(images/menu/contact_btn.jpg); background-size: 100%; background-repeat: no-repeat;background-position: 0px -220px">
+            <!--<img alt="" src="images/menu/contact_btn.jpg" style="top:-220px;">-->
             <div class="mask">
             </div>
             <div class="heading col-xs-11 col-xs-offset-3">
@@ -167,7 +167,7 @@
                 <a href="#" class="fa fa-facebook hidden" data-toggle="tooltip" title="Facebook"></a>
                 <a href="#" class="fa fa-twitter hidden" data-toggle="tooltip" title="Twitter"></a>
                 <a href="#" class="fa fa-plus hidden" data-toggle="tooltip" title="Google+"></a>
-                <a href="https://www.linkedin.com/in/onkarborgaonkar" class="fa fa-linkedin" data-toggle="tooltip"
+                <a href="https://www.linkedin.com/in/onkarborgaonkar" class="fa fa-linkedin hidden" data-toggle="tooltip"
                    title="Linkedin"></a>
                 <a href="#" class="fa fa-behance hidden" data-toggle="tooltip" title="Behance"></a>
                 <a href="#" class="fa fa-flickr hidden" data-toggle="tooltip" title="Flicker"></a>
@@ -227,7 +227,7 @@
                 </div>
             </div>
             <div class="col-sm-4 col-sm-offset-4 text-center" style="position: relative;bottom: 0px;">
-                <i class=" fa fa-chevron-down fa-4x" aria-hidden="true" style=""></i>
+                <i class=" fa fa-chevron-down fa-4x" aria-hidden="true" style="color: #333e43;"></i>
             </div>
         </div>
 
@@ -295,7 +295,9 @@
             </div>
 
             <!-- Single Service Item [ END ]  -->
-
+            <div class="col-sm-4 col-sm-offset-4 text-center" style="position: relative;bottom: 0px;">
+                <i class=" fa fa-chevron-down fa-4x" aria-hidden="true" style="color: white;"></i>
+            </div>
         </div>
 
         <!--( C ) Some Facts -
@@ -315,6 +317,33 @@
             </div>
         </div>
         -->
+        <!--( B ) Testimonials Section -->
+
+        <div class="testimonials clearfix">
+            <h2 class="small-heading">SOME WORDS FROM COLLEAGUES</h2>
+            <div class="testimonials-container col-sm-10 col-sm-offset-1">
+                <div class="owl-carousel">
+                    <div>
+                        <p>
+                            <i class="fa fa-quote-left"></i>There are not many graduate students I would classify as excellent. Onkar is one of them. He is truly exceptional and gifted in his academic skills. He perseverance, focus and dedication to his field is outstanding. I would offer him employment without question<i class="fa fa-quote-right"></i>
+                        </p>
+                        <h3>Prof. Joseph Defazio, Ph.D.</h3>
+                    </div>
+                    <!-- Single Testimonial Item [ END ] -->
+                    <div>
+                        <p>
+                            <i class="fa fa-quote-left"></i>I have been involved with a project at touchmagix. He is a
+                            brilliant learner and excellent programmer. His programming skills are exceptional. He did
+                            his project with utmost sincerity. I would definitely recommend him for any programming job.
+                            He is passionate about writing code and has tremendous potential. I wish him good luck in
+                            his job search and future ahead<i class="fa fa-quote-right"></i>
+                        </p>
+                        <h3>Paranjay Menaria</h3>
+                    </div>
+                    <!-- Single Testimonial Item [ END ] -->
+                </div>
+            </div>
+        </div>
         <!--( D ) Footer -->
 
         <div class="footer clearfix">
@@ -593,7 +622,7 @@
 
         <!--( A ) Portfolio -->
 
-        <div class="portfolio" style="height: 100vh;">
+        <div class="portfolio" style="min-height: 100vh;">
             <h2 class="small-heading">PORTFOLIO</h2>
             <div class="project-container">
 
@@ -714,61 +743,7 @@
             </div>
         </div>
 
-        <!--( B ) Testimonials Section -->
 
-        <div class="testimonials clearfix">
-            <h2 class="small-heading">SOME WORDS FROM COLLEAGUES</h2>
-            <div class="testimonials-container col-sm-10 col-sm-offset-1">
-                <div class="owl-carousel">
-                    <div>
-                        <p>
-                            <i class="fa fa-quote-left"></i>I have been involved with a project at touchmagix. He is a
-                            brilliant learner and excellent programmer. His programming skills are exceptional. He did
-                            his project with utmost sincerity. I would definitely recommend him for any programming job.
-                            He is passionate about writing code and has tremendous potential. I wish him good luck in
-                            his job search and future ahead<i class="fa fa-quote-right"></i>
-                        </p>
-                        <h3>Paranjay Menaria</h3>
-                    </div>
-
-                    <!-- Single Testimonial Item [ END ] -->
-
-                    <div>
-                        <p>
-                            <i class="fa fa-quote-left"></i>Sed vulputate nibh id molestie efficitur. Maecenas cursus
-                            est a quam ullamcorper, eu iaculis ullamcorper. Maecenas pretium aliquet mi, tincidunt
-                            semper lectus rutrum et.<i class="fa fa-quote-right"></i>
-                        </p>
-                        <h3>Cristina Devis</h3>
-                    </div>
-
-                    <!-- Single Testimonial Item [ END ] -->
-
-                    <div>
-                        <p>
-                            <i class="fa fa-quote-left"></i>Ut tristique pellentesque arcu, in hendrerit urna rhoncus
-                            sed. Vivamus vel diam ex. Nunc nunc vitae lectus facilisis imperdiet. Proin pretium tempus
-                            dui, et vehicula purus.<i class="fa fa-quote-right"></i>
-                        </p>
-                        <h3>Jonny Watts</h3>
-                    </div>
-
-                    <!-- Single Testimonial Item [ END ] -->
-
-                    <div>
-                        <p>
-                            <i class="fa fa-quote-left"></i>Etiam sollicitudin ornare pulvinar. Nullam a vulputate
-                            lectus. Maecenas a nisl leo. Curabitur ante nisi, pellentesque et turpis eget, iaculis porta
-                            lorem. Aenean in justo nec turpis maximus.<i class="fa fa-quote-right"></i>
-                        </p>
-                        <h3>John Doe</h3>
-                    </div>
-
-                    <!-- Single Testimonial Item [ END ] -->
-
-                </div>
-            </div>
-        </div>
 
         <!--( C ) Some Facts
 
@@ -872,7 +847,7 @@
         <!--( C ) Contact Details -->
 
         <div class="contact-details clearfix">
-            <h2 class="small-heading">CONTACT DETAILS</h2>
+            <h2 class="small-heading hidden">CONTACT DETAILS</h2>
             <div class="contact col-sm-4">
                 <p>
                     <i class="fa fa-map-marker"></i><br>
@@ -936,11 +911,19 @@
 
             <!-- Single Contact Details Item [ END ] -->
 
+            <div class="contact col-sm-4">
+                <p>
+                    <i class="fa fa-linkedin"></i><br>
+                    <a href="https://www.linkedin.com/in/onkarborgaonkar" target="_blank">LinkedIn Profile</a>
+                </p>
+            </div>
+
+            <!-- Single Contact Details Item [ END ] -->
             <div class="col-xs-12 social-media">
                 <a href="#" class="hidden fa fa-facebook" data-toggle="tooltip" title="Facebook"></a>
                 <a href="#" class="hidden fa fa-twitter" data-toggle="tooltip" title="Twitter"></a>
                 <a href="#" class="hidden fa fa-plus" data-toggle="tooltip" title="Google+"></a>
-                <a href="https://www.linkedin.com/in/onkarborgaonkar" class="fa fa-linkedin" data-toggle="tooltip"
+                <a href="https://www.linkedin.com/in/onkarborgaonkar" class="fa fa-linkedin hidden" data-toggle="tooltip"
                    title="Linkedin"></a>
                 <a href="#" class="hidden fa fa-behance" data-toggle="tooltip" title="Behance"></a>
                 <a href="#" class="hidden fa fa-flickr" data-toggle="tooltip" title="Flicker"></a>

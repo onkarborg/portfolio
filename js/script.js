@@ -1,24 +1,24 @@
 /*
---------------------------------------------------------
+ --------------------------------------------------------
 
-[ INSTA , Javscript ]
+ [ INSTA , Javscript ]
 
-  Template Name : INSTA - Responsive Onepage Resume Template
-  
-  Version       :  1.0 
-  
-  Author        :  Pixel_Factory
-  
-  Author URI    :  http://themeforest.net/user/Pixel_Factory
-  
-  Author Email  : h.nafees.anwar@gmail.com
+ Template Name : INSTA - Responsive Onepage Resume Template
 
---------------------------------------------------------
-*/
+ Version       :  1.0
+
+ Author        :  Pixel_Factory
+
+ Author URI    :  http://themeforest.net/user/Pixel_Factory
+
+ Author Email  : h.nafees.anwar@gmail.com
+
+ --------------------------------------------------------
+ */
 
 /*  ------------------
-    Remove Preloader
-    ------------------  */
+ Remove Preloader
+ ------------------  */
 
 $(window).load(function () {
     $('#preloader').delay(250).fadeOut('slow', function () {
@@ -31,9 +31,9 @@ $(document).ready(function () {
     'use strict';
 
     /*  ---------------------
-         Homepage Responsive
-        ---------------------  */
-    
+     Homepage Responsive
+     ---------------------  */
+
 
     function homepageResponsive() {
 
@@ -90,27 +90,28 @@ $(document).ready(function () {
     $(window).on('load resize', homepageResponsive);
 
     /*  --------------
-         Menu Settings
-        --------------  */
+     Menu Settings
+     --------------  */
 
     // Hide Menu
 
     $('.menu > div').on('click', function () {
 
         var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
+            menuWidth = $('.menu').width(),
+            imageLoc = $(this).css("background-position");
 
         $('.introduction').animate({
             left: introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu > div').not(this).animate({
-            left: '-' + menuWidth ,
-            height: '0%'
-        }, 1000, 'easeOutQuart', function () {
+        }, 200, 'easeOutQuart');
+        $('.menu > div').not(this).animate({left: '-' + menuWidth, height: '0%'}, 200, 'easeOutQuart', function () {
         });
-        $(this).animate({width: "200%", height: "100%", top: "0"}, 1000, 'easeOutQuart',
-            function () {
-                $(this).animate({left: "200%"}, 1000, 'easeOutQuart', function () {
+        $(this).css("background-size","cover");
+        $(this).css("background-position","0px 0px");
+        $(this).animate({width: "100vw", height: "100vh", top: "0px"}, 1000, 'easeOutQuart', function () {
+            $(this).css("background-size","100% 100%");
+            $(this).animate({left: "96%", width: "41.66vw"}, 1000, 'easeOutQuart',  function () {
+                $(this).animate({opacity: "0"}, 200, 'easeOutQuart', function () {
                     $('.menu>div').css({
                         width: '100%',
                         height: '25%'
@@ -118,9 +119,13 @@ $(document).ready(function () {
                     $('.home-page').css({
                         visibility: 'hidden'
                     });
+                    $(this).css("background-size","100%");
+                    $(this).css("background-position",imageLoc);
                 });
-            }
-        );
+
+            });
+            $(this).children("div").not(".mask").animate({opacity:"0"},1000,'easeOutQuart');
+        });
     });
 
     // Show Reletive Page Onclick
@@ -145,42 +150,42 @@ $(document).ready(function () {
 
     $('.close-btn').on('click', function () {
         $('.home-page').css({
-            visibility: 'visible'
+            visibility: 'visible',
         });
         $('.introduction, .menu, .menu>div').animate({
-            left: 0
+            left: 0, opacity:1
         }, 1000, 'easeOutQuart');
         $('.profile-page, .resume-page, .portfolio-page, .contact-page').fadeOut(800);
     });
-    
+
     /*  --------------------------------
-         Maximize Services Items Height
-        --------------------------------  */
-    
+     Maximize Services Items Height
+     --------------------------------  */
+
     function maximizeHeight() {
-        
+
         var minHeight = 0;
-        
+
         $('.services').each(function () {
-            
+
             var maxHeight = $(this).height();
-            
+
             if (maxHeight > minHeight) {
                 minHeight = maxHeight;
             }
-            
+
         });
-        
+
         $('.services').height(minHeight);
     }
-    
+
     maximizeHeight();
-    
+
     $(window).on('resize', maximizeHeight);
 
     /*  ----------------------------------------
-         Tooltip Starter for Social Media Icons
-        ----------------------------------------  */
+     Tooltip Starter for Social Media Icons
+     ----------------------------------------  */
 
     $('.intro-content .social-media [data-toggle="tooltip"]').tooltip({
         placement: 'bottom'
@@ -189,8 +194,8 @@ $(document).ready(function () {
     $('.contact-details .social-media [data-toggle="tooltip"]').tooltip();
 
     /*  ------------
-         Pie Charts
-        ------------  */
+     Pie Charts
+     ------------  */
 
     $(function () {
 
@@ -211,28 +216,28 @@ $(document).ready(function () {
     });
 
     /*  -------------------------------
-         MixItUp ( for portfolio page )
-        -------------------------------  */
+     MixItUp ( for portfolio page )
+     -------------------------------  */
 
     $(function () {
 
         // Initiate MixItUp
 
         $('#projects').mixItUp({
-            
+
             callbacks: {
                 onMixLoad: function (state) {
                     $('.portfolio-page').hide();
                 }
             }
-            
+
         });
 
     });
 
     /*  -------------------------------
-         PopUp ( for portfolio page )
-        -------------------------------  */
+     PopUp ( for portfolio page )
+     -------------------------------  */
 
     $(function () {
         $('.show-popup').popup({
@@ -242,8 +247,8 @@ $(document).ready(function () {
     });
 
     /*  -----------------------------------------------------
-         MixItUp ( for portfolio page : testimonials slider )
-        -----------------------------------------------------  */
+     MixItUp ( for portfolio page : testimonials slider )
+     -----------------------------------------------------  */
 
     $(function () {
         $(".owl-carousel").owlCarousel({
@@ -253,13 +258,13 @@ $(document).ready(function () {
             singleItem: true
         });
     });
-    
+
     /*  -------------
-         Contact Form
-        ------------- */
+     Contact Form
+     ------------- */
 
     $('#contactForm').submit(function () {
-        
+
         $.ajax({
             type: "POST",
             url: "php/contact.php",
@@ -279,8 +284,8 @@ $(document).ready(function () {
     });
 
     /*  -------------------------------
-         Google Map ( for contact page )
-        -------------------------------  */
+     Google Map ( for contact page )
+     -------------------------------  */
 
     $('#google-map').gMap({
         latitude: 39.773932,
