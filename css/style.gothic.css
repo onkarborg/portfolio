@@ -1383,6 +1383,9 @@ body {
 .footer {
     background: #333e43;
     padding: 10px 20px 6px 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 58.33%;
 }
 
 .footer a {
