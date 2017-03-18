@@ -11,22 +11,22 @@
 
 @media only screen and (max-device-width: 480px) {
   .profile-btn{
-background-position: 0px -200px;
+    background-position: 0px 50%;
   }
   .resume-btn{
-    background-position: 0px 0px;
+    background-position: 0px 30%;
   }
   .portfolio-btn{
-    background-position: 0px 0px;
+    background-position: 0px 30%;
   }
   .contact-btn{
-    background-position: 0px 0px;
+    background-position: 0px 60%;
   }
 }
 @media only screen and (min-device-width: 480px) {
-.profile-btn{
-  background-position: 0px 50%;
-}
+  .profile-btn{
+    background-position: 0px 50%;
+  }
   .resume-btn{
     background-position: 0px 30%;
   }
