@@ -150,8 +150,9 @@ $(document).ready(function () {
 
     $('.close-btn').on('click', function () {
         $('.home-page').css({
-            visibility: 'visible',
+            visibility: 'visible'
         });
+        $(".menu > div >div").not(".mask").css({opacity:"1"});
         $('.introduction, .menu, .menu>div').animate({
             left: 0, opacity:1
         }, 1000, 'easeOutQuart');

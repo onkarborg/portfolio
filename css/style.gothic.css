@@ -412,6 +412,7 @@ body {
     .social-media a:hover {
         color: #333e43;
     }
+
 }
 @media only screen and (min-device-width: 480px) {
     .intro-content {
