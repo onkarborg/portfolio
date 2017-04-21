@@ -1,7 +1,8 @@
 .header-white {
   /*background:linear-gradient(135deg, #172a74, #21a9af);*/
   /*background-color:#184e8e;*/
-  padding-bottom:120px;
+  padding-bottom:60px;
+  padding-top:60px;
   font-family:'Source Sans Pro', sans-serif;
 }
 
@@ -60,7 +61,7 @@
 
 .header-white .hero p {
   /*color:rgba(255,255,255,0.8);*/
-  font-size:20px;
+  font-size:22px;
   margin-bottom:30px;
   font-weight:300;
 }
@@ -109,6 +110,7 @@
 }
 
 .portfolio-item > div {
+  text-align:center;
   background:#f5f5f5;
   /*border-radius:10px;*/
   padding:20px;
@@ -119,6 +121,7 @@
   border-radius:10px;
   padding:20px;
   color:white;
+  text-align:center;
   /*animation-name:example;*/
   /*animation-duration:4s;*/
   /*animation-iteration-count:3;*/

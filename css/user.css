@@ -4,70 +4,64 @@
 }
 
 p{
-font-family:myFirstFont;
-font-weight: 400;
+    font-family:myFirstFont;
+    font-weight: 400;
     font-style: normal;
     font-size: 21px;
     line-height: 1.58;
     letter-spacing: -.003em;
 }
 
-li{
-font-family:myFirstFont;
-font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.28;
-    letter-spacing: -.003em;
-	padding: 5px;
-}
-
-img{
-margin-top: 20px;
-margin-bottom: 20px;
-}
-
-.carousel{
-margin-top: 20px;
-margin-bottom: 20px;
-}
-
 .navbar {
   padding:5vh;
 }
 
-.navbar-link{
-  color: white;
-}
-.menu > div{
-  background-size: 100%; background-repeat: no-repeat;
+i.fa {
+  background:#eee;
+  border-radius:50%;
+  box-shadow:0 0 0 4px rgba(255, 255, 255, 0.15), 0 0 0 0 rgba(255, 255, 255, 0.3);
+  color:#333;
+  font-size:20px;
+  height:30px;
+  line-height:30px;
+  width:30px;
+  margin:20px 0 10px 0;
+  -moz-transition:all 0.3s;
+  -ms-transition:all 0.3s;
+  transition:all 0.3s;
+  cursor:pointer;
 }
 
-@media only screen and (max-device-width: 480px) {
-  .profile-btn{
-    background-position: 0px 50%;
-  }
-  .resume-btn{
-    background-position: 0px 30%;
-  }
-  .portfolio-btn{
-    background-position: 0px 30%;
-  }
-  .contact-btn{
-    background-position: 0px 60%;
-  }
+.carousel-indicators li {
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin:1px;
+  text-indent:-999px;
+  cursor:pointer;
+  background-color:#000;
+  background-color:rgba(0,0,0,0);
+  border:1px solid #000;
+  border-radius:10px;
 }
-@media only screen and (min-device-width: 480px) {
-  .profile-btn{
-    background-position: 0px 50%;
-  }
-  .resume-btn{
-    background-position: 0px 30%;
-  }
-  .portfolio-btn{
-    background-position: 0px 30%;
-  }
-  .contact-btn{
-    background-position: 0px 60%;
-  }
+
+.carousel-indicators .active {
+  width:12px;
+  height:12px;
+  margin:0;
+  background-color:#000;
+}
+
+.carousel-inner {
+  min-height:202px;
+}
+
+li{
+    font-family:myFirstFont;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.28;
+    letter-spacing: -.003em;
+    padding: 5px;
 }

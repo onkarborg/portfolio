@@ -1,0 +1,73 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/download.woff);
+}
+
+p{
+font-family:myFirstFont;
+font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+}
+
+li{
+font-family:myFirstFont;
+font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.28;
+    letter-spacing: -.003em;
+	padding: 5px;
+}
+
+img{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.carousel{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.navbar {
+  padding:5vh;
+}
+
+.navbar-link{
+  color: white;
+}
+.menu > div{
+  background-size: 100%; background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .profile-btn{
+    background-position: 0px 50%;
+  }
+  .resume-btn{
+    background-position: 0px 30%;
+  }
+  .portfolio-btn{
+    background-position: 0px 30%;
+  }
+  .contact-btn{
+    background-position: 0px 60%;
+  }
+}
+@media only screen and (min-device-width: 480px) {
+  .profile-btn{
+    background-position: 0px 50%;
+  }
+  .resume-btn{
+    background-position: 0px 30%;
+  }
+  .portfolio-btn{
+    background-position: 0px 30%;
+  }
+  .contact-btn{
+    background-position: 0px 60%;
+  }
+}
